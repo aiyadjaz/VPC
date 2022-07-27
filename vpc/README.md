@@ -1,5 +1,3 @@
-Instruction on how to build VPC
-Please copy paste below code
 module "vpc-t1" {
     source  = "aiyadjaz/vpc-t1/aws"
     
@@ -16,27 +14,4 @@ module "vpc-t1" {
     tags = {
         Name = "main"
     }
-}
-
-To get the output, please add the following code
-output "vpc_id" {
-  value = aws_vpc.main.id
-}
-output "public_subnet1" {
-  value = aws_subnet.public1.id
-}
-output "public_subnet2" {
-  value = aws_subnet.public2.id
-}
-output "public_subnet3" {
-  value = aws_subnet.public3.id
-}
-output "private_subnet1" {
-  value = aws_subnet.private1.id
-}
-output "private_subnet2" {
-  value = aws_subnet.private2.id
-}
-output "private_subnet3" {
-  value = aws_subnet.private3.id
 }
