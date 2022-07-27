@@ -12,33 +12,33 @@ variable "tags" {
   type        = map(any)
   default     = {}
 }
-variable "public_subnet1" {
+variable "public-1" {
   description = "Please provide subnet CIDR block"
   type        = string
   default     = ""
 }
-variable "public_subnet2" {
+variable "public-2" {
   description = "Please provide subnet CIDR block"
   type        = string
   default     = ""
 }
-variable "public_subnet3" {
+variable "public-3" {
   description = "Please provide subnet CIDR block"
   type        = string
   default     = ""
 }
-variable "private_subnet1" {
+variable "private-1" {
   description = "Please provide subnet CIDR block"
   type        = string
   default     = ""
 }
-variable "private_subnet2" {
+variable "private-2" {
   description = "Please provide subnet CIDR block"
   type        = string
   default     = ""
 }
-variable "private_subnet3" {
-  description = "Please provide subnet CIDR block for private_subnet3"
+variable "private-3" {
+  description = "Please provide subnet CIDR block for private-3"
   type        = string
   default     = ""
 }
@@ -49,7 +49,7 @@ variable "enable_nat_gateway" {
 }
 
 variable "enableDnsHostnames" {
-  description = "enableDnsHostnames ? "
+  description = "enableDnsHostnames"
   type        = bool
   default     = true
 }
